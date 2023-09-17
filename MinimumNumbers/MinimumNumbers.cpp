@@ -10,13 +10,18 @@ int main()
 
     int a = 0;
     int b = 0;
+    int maximum;
+    int minimum;
 
     cout << "Введите число a: ";
     cin >> a;
     cout << "Введите число b: ";
     cin >> b;
 
-    if (a > b) {
+    maximum = max(a, b);
+    minimum = min(a, b);
+    cout << "Число " << maximum << " больше числа " << minimum << endl;
+    /*if (a > b) {
         cout << "Число a = " << a << " больше числа b = " << b << endl;
     }
     else {
@@ -26,7 +31,7 @@ int main()
         else {
             cout << "Числа равны!" << endl;
         }
-    }
+    }*/
 
     // Задержка окна терминала:
     system("pause > nul");
